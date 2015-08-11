@@ -1,0 +1,7 @@
+
+body, td       { font-size: 9pt; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+a:link  { text-decoration: none }
+a:hover       { }
+a:active  { text-decoration: none }
+a:visited  { text-decoration: none }
+body.chapter_choice { background-color: #fff500 }
