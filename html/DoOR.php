@@ -160,6 +160,15 @@
                             </table>
                           </span>
 
+
+
+                        <h2>Publications</h2>
+                          <span id="links">
+                            <a class="DoORFrontpageLink FPLpurple" target="_blank" href="http://biorxiv.org/content/early/2015/09/30/027920">DoOR 2.0 - Comprehensive Mapping of <i>Drosophila melanogaster</i> Odorant Responses.</a> 2015, bioRxiv<br>
+                            <a class="DoORFrontpageLink FPLpurple" target="_blank" href="http://chemse.oxfordjournals.org/content/35/7/551">Integrating heterogeneous odor response data into a common response model: A DoOR to the complete olfactome.</a> 2010, Chemical Senses<br>
+                            <a class="DoORFrontpageLink FPLgreen" target="_blank" href="http://www.chemosense.net/issues/11/ChemoSenseSept11.pdf">DoOR: The Database of Odorant Responses.</a> 2011, Chemosense<br>
+                          </span>
+
                         <h2>Documentation</h2>
                           <span id="download">
                             <a class="DoORFrontpageLink FPLgreen" target="_blank" href="doc/DooR.functions_vignette.html">DoOR.functions</a><br>
@@ -170,7 +179,7 @@
                         <h2>Links</h2>
                           <span id="links">
                             <a class="DoORFrontpageLink FPLblue" target="_blank" href="https://github.com/Dahaniel/DoOR.functions">DoOR.functions @ GitHub</a><br>
-                            <a class="DoORFrontpageLink FPLblue" target="_blank" href="https://github.com/Dahaniel/DoOR.functions">DoOR.data @ GitHub</a><br>
+                            <a class="DoORFrontpageLink FPLblue" target="_blank" href="https://github.com/Dahaniel/DoOR.data">DoOR.data @ GitHub</a><br>
                             <a class="DoORFrontpageLink FPLred" target="_blank" href="https://github.com/Dahaniel/DoOR.functions/issues">report a bug or request a feature</a><br>
                             <a class="DoORFrontpageLink FPLpurple" target="_blank" href="http://neuro.uni.kn/DoOR">DoOR 1.0</a>
                           </span>
