@@ -94,7 +94,10 @@
               if($Data[18] != ""){echo "<td class=\"comment\" valign=\"top\" align=\"left\" rowspan=\"6\">",$Data[18],"</td>\n";}
               echo "</tr>\n";
 
-              echo "<tr><th>Neuron:</th><td>",$Data[3],"</td><th>Links:</th><td><a class = \"extern\" href = \"http://flybase.org/cgi-bin/quicksearch.cgi?species=Dmel&field=SYM&db=fbgn&addata=all&context=",$OR,"\">FlyBase</a></td></tr>\n";
+              echo "<tr><th>Neuron:</th><td>",$Data[3],"</td><th>Links:</th><td>\n";
+              echo "<a class = \"extern\" href = \"http://flybase.org/cgi-bin/quicksearch.cgi?species=Dmel&field=SYM&db=fbgn&addata=all&context=",$OR,"\", target = \"_blank\">FlyBase</a>";
+              if ($Data[21] != "NA") {echo ", <a href=\"http://www.virtualflybrain.org/site/stacks/index.htm?id=",$Data[21],"\", target = \"_blank\">VirtualFlyBrain</a> ";}
+              echo "</td></tr>\n";
               echo "<tr><th>Sensillum:</th><td>",$Data[2],"</td></tr>\n";
               echo "<tr><th>Glomerulus:</th><td>",$Data[4],"</td></tr>\n";
               echo "<tr><th>Related:</th><td>";
