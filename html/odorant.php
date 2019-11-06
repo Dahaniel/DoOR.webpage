@@ -61,7 +61,13 @@
 
 	<body>
 		<?php if ($odorant == ""){echo "No odorant specified...";}else {  ?>
-			<?php if (file_exists("data/odorants/".$odorant.".csv") == FALSE){echo "Sorry, couldn't find data for ",$odorant,"...\n";}else {  ?>
+			<?php if (file_exists("data/odorants/".$odorant.".csv") == FALSE){echo "Sorry, couldn't find data for ",$odorant,"...</br></br>\n
+			This might happen when a data set is excluded during the merging process due to insufficient overlap 
+			with other studies or insufficient quality of the fit.</br></br>\n
+			All excluded studies are listed in <a href=\"https://github.com/ropensci/DoOR.data/blob/master/data/door_excluded_data.csv\"><span style=\"font-family: monospace;\">door_excluded_data</span></a></ br>\n
+			To list all available RAW responses for the odorant you are looking for type (in R): </ br>
+			<span style=\"font-family: monospace;\">na.omit(get_responses('",$odorant,"'))</span>
+			";}else {  ?>
 
 				<!--## HEADER ##-->
 				<!--## CHANGE ODORANT ##-->
