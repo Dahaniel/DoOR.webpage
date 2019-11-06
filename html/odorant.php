@@ -43,7 +43,6 @@
 			});
 		});
 		$(document).ready(function(){
-
 			// Make table cell focusable
 			// http://css-tricks.com/simple-css-row-column-highlighting/
 			if ( $('.focus-highlight').length ) {
@@ -54,7 +53,6 @@
 					$(this).focus();
 				});
 			}
-
 		});
 		</script>
 	</head>
@@ -62,11 +60,11 @@
 	<body>
 		<?php if ($odorant == ""){echo "No odorant specified...";}else {  ?>
 			<?php if (file_exists("data/odorants/".$odorant.".csv") == FALSE){echo "Sorry, couldn't find data for ",$odorant,"...</br></br>\n
-			This might happen when a data set is excluded during the merging process due to insufficient overlap 
-			with other studies or insufficient quality of the fit.</br></br>\n
-			All excluded studies are listed in <a href=\"https://github.com/ropensci/DoOR.data/blob/master/data/door_excluded_data.csv\"><span style=\"font-family: monospace;\">door_excluded_data</span></a></ br>\n
-			To list all available RAW responses for the odorant you are looking for type (in R): </ br>
-			<span style=\"font-family: monospace;\">na.omit(get_responses('",$odorant,"'))</span>
+			This might happen when a data set is excluded during the merging process due to insufficient overlap
+			with other studies or insufficient quality of the fit. \n
+			All excluded studies are listed in <a href=\"https://github.com/ropensci/DoOR.data/blob/master/data/door_excluded_data.csv\"><span style=\"font-family: monospace;\">door_excluded_data</span></a></br></br>\n
+			To list all available RAW responses for the odorant you are looking for type (in R): </br></br>\n
+			<span style=\"font-family: monospace; font-weight: bold;\">na.omit(get_responses('",$odorant,"'))</span>
 			";}else {  ?>
 
 				<!--## HEADER ##-->
@@ -174,7 +172,6 @@
 											$studiesByOdors = fopen("data/datasets/datasets_per_odorant.csv", "r");
 											while(($Data = fgetcsv($studiesByOdors, 1000, ",")) !== FALSE) 	{
 												$cols = count($Data);
-
 												#$i = 2;
 												if ($Data[1] == $odorant){
 													$ii = 1;
@@ -193,7 +190,6 @@
 											} else {
 												echo "error - data missing\n";
 											}
-
 											?>
 
 
@@ -214,13 +210,10 @@
 										<?php
 										$row = 1;
 										$odorantFile = fopen("data/odorants/".$odorant.".csv", "r");
-
 										echo "<table class=\"door focus-highlight\" id=\"datatable\">\n";
-
 										while(($Data = fgetcsv($odorantFile, 1000, ",")) !== FALSE)
 										{
 											$cols = count($Data);
-
 											if ($row == 1){
 												echo"<thead>\n<tr>\n";
 												$row++;
@@ -229,7 +222,6 @@
 												echo "</tr>\n</thead>\n\n";
 												echo "<tbody>\n";
 											}
-
 											else {
 												echo"<tr>\n";
 												$row++;
@@ -247,7 +239,6 @@
 										}
 										echo "</tbody>\n";
 										echo "</table>\n";
-
 										fclose($odorantFile);
 										?>
 										<!--### END OF TABLE ###-->
